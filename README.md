@@ -82,7 +82,6 @@ K-Means isolated **28 customers (0.5%)**, which are 4 "Super VIP" and 24 "VIP" c
 
 ## Lessons Learned
 
-- **Verify the data before analyzing it.** My first copy of the dataset had exactly 1,048,575 rows, which is the Excel row limit. The CSV had been silently truncated after being opened in a spreadsheet app. Checking the row count against the known size caught it. Re-downloading the file and never opening it in Excel fixed it.
 - **Dirty data hides in formats.** `InvoiceDate` mixed two date formats; the default parser failed and a wrong `dayfirst` guess would have silently shifted dates.
 - **Don't trust a metric blindly.** The highest silhouette score (K = 2) came from outliers, not meaningful groups. Checking cluster sizes exposed it.
 - **Check dashboard numbers against the notebook.** A "Total Customers" card showed 90 million because Tableau summed Customer IDs instead of counting distinct values.
