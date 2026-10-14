@@ -14,7 +14,7 @@ Which customers generate the most revenue, which valuable customers are at risk 
 
 ## Dataset
 
-- **Source:** [Online Retail II](https://www.kaggle.com/) (UCI / Kaggle), transactions from a UK-based online retailer
+- **Source:** [Online Retail II](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci) (UCI / Kaggle), transactions from a UK-based online retailer
 - **Period:** December 2009 to December 2011
 - **Size:** 1,067,371 rows, 8 columns (Invoice, StockCode, Description, Quantity, InvoiceDate, Price, Customer ID, Country)
 - The raw file is not included in this repo because of its size. Download it from the link above.
